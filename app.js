@@ -6,7 +6,6 @@ app.use(express.json());
 
 // Create a new transaction
 app.post('/transactions', async (req, res) => {
-  console.log(req.body);
   const { amount, userto, userfrom } = req.body;
   try {
     // Insert the new transaction into the database
